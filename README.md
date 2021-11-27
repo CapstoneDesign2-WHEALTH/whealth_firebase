@@ -6,6 +6,7 @@ npm install -g react-native-cli
 
 yarn add @react-native-firebase/app
 yarn add @react-native-firebase/database
+
 rebuild the ios app (pod install)
 
 # 파이어베이스 프로젝트에서 ios 앱 생성 (첫번째 방법)
@@ -20,7 +21,6 @@ rebuild the ios app (pod install)
 3) - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
   if ([FIRApp defaultApp] == nil) {
     [FIRApp configure]; 
-
-    같은 파일에 위 라인들 추가
+  같은 파일에 위 라인들 추가
 4) rebuild ios app (pod install)
 *(https://blog.jscrambler.com/integrating-firebase-with-react-native 에 나온 내용)
