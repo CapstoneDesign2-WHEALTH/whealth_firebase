@@ -16,3 +16,5 @@ rebuild the ios app (pod install)
 3) yarn add @react-native-community/google-signin
 4) rebuild ios app (pod install)
 5) XCode에서 URL 스키마에 REVERSED_CLIENT_ID(GoogleService-Info.plist 파일 안에 있음)을 추가.
+
+App.js 안에 모든 것이 들어있다.
