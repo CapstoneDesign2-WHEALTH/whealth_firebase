@@ -13,7 +13,7 @@ class App extends Component {
 
   componentDidMount() {
     GoogleSignin.configure({
-      webClientId: '870270025182-m2tqf0qgq4os32ov5ccf0q9q578fg7mu.apps.googleusercontent.com', 
+      webClientId: 'web client id', 
       offlineAccess: true, 
       hostedDomain: '', 
       forceConsentPrompt: true, 
