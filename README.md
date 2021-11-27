@@ -9,24 +9,10 @@ yarn add @react-native-firebase/database
 
 rebuild the ios app (pod install)
 
-
-
-# 파이어베이스 프로젝트에서 ios 앱 생성 (첫번째 방법)
-1) GoogleService-Info.plist 다운로드 : Xcode 프로젝트의 루트로 이동하여 대상 전체에 plist 파일 추가
-2) Firebase SDK 추가 : ?????
-3) 초기화 코드 추가 : ?????
-
-(파이어베이스 사이트에 sdk 안내문에 나온 내용)
-
-
-
-# 파이어베이스 프로젝트에서 ios 앱 생성 (두번째 방법)
-1) GoogleService-Info.plist 다운로드 : Xcode 프로젝트의 루트로 이동하여 대상 전체에 plist 파일 추가
-2) ios/{projectName}/AppDelegate.m 파일을 열어서 맨 위에 #import <Firebase.h> 라인 추가
-3) - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
-  if ([FIRApp defaultApp] == nil) {
-    [FIRApp configure]; 
-  같은 파일에 위 라인들 추가
+# 구글 로그인 관련
+# 파이어베이스 프로젝트에서 ios 앱 생성
+1) plist 관련해서는 동일함
+2) 프로젝트 Authentication에서 구글 로그인 활성화-> 웹 클라이언트 ID 따로 저장해두기 -> 프로젝트코드에 추가해야 됨.
+3) yarn add @react-native-community/google-signin
 4) rebuild ios app (pod install)
-
-(https://blog.jscrambler.com/integrating-firebase-with-react-native 에 나온 내용)
+5) XCode에서 URL 스키마에 REVERSED_CLIENT_ID(GoogleService-Info.plist 파일 안에 있음)을 추가.
