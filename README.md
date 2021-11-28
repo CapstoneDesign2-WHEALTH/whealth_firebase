@@ -5,6 +5,7 @@ ios 버전 세팅하는 방법
 npm install -g react-native-cli
 
 yarn add @react-native-firebase/app
+
 yarn add @react-native-firebase/database
 
 rebuild the ios app (pod install)
